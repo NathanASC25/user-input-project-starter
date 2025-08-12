@@ -10,6 +10,8 @@ let submit = document.querySelector("button");
 let body = document.querySelector("body");
 let result = document.createElement("p");
 
+let adlibTitles = document.querySelectorAll(".adlib label");
+
 let firstPart = "Last night I ate a ";
 let secondPart = ", and today I just had had to ";
 let thirdPart = " What a ";
@@ -50,5 +52,7 @@ submit.onclick = function(event){
         noun_input.remove();
         verb_input.remove();
         adj_input.remove();
+
+        adlibTitles.style.display = "none";
     }
 }
